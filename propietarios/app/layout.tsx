@@ -11,13 +11,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-/* const headers = Playfair_Display({
+const playfair = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-playfair',
   weight: ['400', '500', '600', '700', '800', '900'],
   style: ['normal', 'italic'],
 })
-const main = Inter({
+/* const main = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
 }) */
@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased`}
       >
         {children}
       </body>

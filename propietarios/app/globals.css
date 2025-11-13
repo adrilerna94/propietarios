@@ -3,7 +3,33 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* 🎨 Colores globales */
+  --Dark-Licorice: #2A1E18;
+  --Dark-Taupe: #534742;
+
+  /* 🖋️ Fuentes globales */
+  --font-font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-font-mono: var(--font-geist-mono), monospace;
+  --font-playfair: var(--font-playfair), "Playfair Display", serif;
 }
+
+@layer utilities {
+  .text-dark-licorice {
+    color: var(--Dark-Licorice);
+  }
+  .text-dark-taupe {
+    color: var(--Dark-Taupe);
+  }
+
+  .font-sans-custom {
+    font-family: var(--font-font-sans);
+  }
+
+  .font-playfair-custom {
+    font-family: var(--font-playfair);
+  }
+}
+
 
 @theme inline {
   --color-background: var(--background);
@@ -24,3 +50,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 } */
+ /* Ejemplo de aplicar fuentes base */
+body {
+  font-family: var(--font-font-sans);
+  color: var(--Dark-Licorice);
+  background-color: #fff;
+}
