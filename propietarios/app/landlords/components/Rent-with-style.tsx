@@ -3,7 +3,7 @@ import Image from "next/image";
 export function RentWithStyle() {
   return (
     <section
-      className="flex flex-col text-black px-[10rem] py-[3rem] gap-[3rem]" // 160px = 10rem | 48px entre secciones
+      className="flex flex-col text-black gap-[3rem]" // 160px = 10rem | 48px entre secciones
     >
       {/* Bloque título y descripción */}
       <section className="flex flex-col gap-[1.5rem]"> {/* 24px = 1.5rem */}
